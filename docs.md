@@ -95,7 +95,7 @@ git clone https://github.com/ChukzTech126/ansible-config-mgts.git
 
 ### 3. Clone down your ansible-config-mgt repo to your Jenkins-Ansible instance git clone `<ansible-config-mgt repo link>`
 
-![](./images/clone-repo-to-ansible-server.png)
+
 
 
 ## Step 3 - Begin Ansible Development
@@ -223,7 +223,7 @@ In `common.yml` playbook you will write configuration for repeatable, re-usable,
 
 __Update your `playbooks/common.yml` file with following code__
 
-```yaml
+```sh
 ---
 - name: Update web and NFS servers
   hosts: webservers, nfs
@@ -325,7 +325,7 @@ Another VSCODE opens showing the access mode and the name of the remote server (
 
 3. Run ansible-playbook command:
 
-```bash
+```sh
 ansible-playbook -i Inventory/dev.yml playbooks/common.yml
 ```
 ![](assets/2025-02-05-00-52-52.png)
@@ -346,7 +346,6 @@ Check Web Server 2
 ![](assets/2025-02-05-00-55-36.png)
 Check NFS Server
 
-![](./images/nfs-wireshark.png)
 
 Check Database Server
 
